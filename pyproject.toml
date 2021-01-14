@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "magnitude-ae"
+version = "0.1.0"
+description = "An autoencoder which preserves magnitude"
+authors = ["Michael F. Adamer"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+torch = "^1.7.1"
+pytorch-lightning = "^1.1.4"
+tensorboard = "^2.4.0"
+torchvision = "^0.8.2"
+tadasets = "^0.0.4"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
