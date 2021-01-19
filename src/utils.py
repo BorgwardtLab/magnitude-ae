@@ -32,4 +32,4 @@ def max_dist(x):
 
 def is_scattered(x):
     card_A = torch.tensor(x.shape[0],dtype=torch.float32,requires_grad=False)
-    return (min_dist(x) > torch.log10(card_A)-1)
+    return (min_dist(x) > torch.log10(card_A-1))
