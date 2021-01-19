@@ -25,18 +25,3 @@ class Spheres():
         envelope = dsphere(n=datapoints,d=self.d,r=5*self.r)
         spheres.append(envelope)
         return np.vstack(spheres)
-
-    # def generate_more(self):
-    #     if self.tensor:
-    #         return torch.as_tensor(self._generate_sphere_data(more=True),dtype=torch.float)
-    #     else:
-    #         return self._generate_sphere_data(more=True)
-
-# def generate_sphere_data(d,n_spheres,r):
-#     shifts = np.random.randn(n_spheres,d+1)
-#     sigma = np.sqrt(10.0/np.sqrt(float(d+1)))*np.eye(d+1)
-#     shifts = [np.matmul(sigma,shifts[i].reshape(-1,1)).reshape(1,-1) for i in range(n_spheres)]
-#     spheres = [shifts[i] + dsphere(n=1000,d=d,r=r) for i in range(n_spheres)]
-#     envelope = dsphere(n=1000,d=d,r=5*r)
-#     spheres.append(envelope)
-#     return torch.as_tensor(np.vstack(spheres))
